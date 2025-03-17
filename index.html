@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rating App</title>
+     <link rel="stylesheet" href="./style.css">
+     <style>
+        body {
+    font-family: 'Cursive', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: lightslategray;
+    font-size: medium;
+
+}
+     </style>
+</head>
+<body>
+    <h1>Ramen Rating App</h1>
+    <!-- <div class="images">
+        https://moringa.instructure.com/courses/967/files/517801/preview
+        https://moringa.instructure.com/courses/967/files/517800/preview
+        https://moringa.instructure.com/courses/967/files/517799/preview
+        https://moringa.instructure.com/courses/967/files/517798/preview
+        https://moringa.instructure.com/courses/967/files/517797/preview
+
+    </div> -->
+    <div id="ramen-menu"></div>
+    
+    <div id="ramen-detail">
+        <h2 id="ramen-name">Ramen Name</h2>
+        <p id="ramen-restaurant">Restaurant: </p>
+        <p id="ramen-rating">Rating: </p>
+        <p id="ramen-comment">Comment: </p>
+    </div>
+    
+    <div id="new-ramen-form">
+        <h3>Add a New Ramen</h3>
+        <form id="ramen-form">
+            <label for="name">Ramen Name: </label><br><br>
+            <select id="name" required><br><br>
+                <option value=""></option>
+                <option value="shoyu">Shoyu</option>
+                <option value="shio">Shio</option>
+                <option value="tonkotsu">Tonkotsu</option>
+                <option value="miso">Miso</option>
+</select>
+            <label for="restaurant">Restaurant: </label><br><br>
+            <input type="text" id="restaurant" required><br><br>
+            <label for="image">Image URL: </label><br><br>
+            <select id="image" required><br><br>
+                <option value="images/bon-vivant-qom5MPOER-I-unsplash.jpg"></option>
+                <option value="https://moringa.instructure.com/courses/967/files/517801/preview">Shoyu</option>
+                <option value=">Shio</option>
+                <option value="images/mae-mu-H5Hj8QV2Tx4-unsplash.jpg">Tonkotsu</option>
+                <option value="images/mae-mu-0zv5Zj0Xh8Y-unsplash.jpg">Miso</option>
+                <option value="images/stephen-bedase-WjdOYhgTGCM-unsplash.jpg">Shoyu</option>
+            </select>
+            <label for="rating">Rating: </label><br><br>
+            <input type="number" id="rating" min="1" max="5" required><br><br>
+            <label for="comment">Comment: </label><br><br>
+            <input type="text" id="comment">
+            <button type="submit">Add Ramen</button>
+        </form>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
